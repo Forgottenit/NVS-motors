@@ -86,6 +86,7 @@ a[aria-current="page"] {
   box-shadow: 0px 0px 20px 0px #000000;
   border-radius: 8px;
   margin: 10px;
+  height: auto;
 }
 .img_deg_right {
   float: right;
@@ -94,6 +95,7 @@ a[aria-current="page"] {
   box-shadow: 0px 0px 20px 0px #000000;
   border-radius: 8px;
   margin: 10px;
+  height: auto;
 }
 .img_deg_left {
   float: left;
@@ -102,6 +104,7 @@ a[aria-current="page"] {
   box-shadow: 0px 0px 20px 0px #000000;
   border-radius: 8px;
   margin: 10px;
+  height: auto;
 }
 .pos_AboutUs {
   position: relative;
@@ -334,106 +337,6 @@ footer a[aria-current="page"] {
 
 .copyright {
   text-align: right;
-}
-/*------------------------------------------INDEX---------------------------------------------*/
-#info {
-  margin: 20px 8px;
-  text-align: center;
-  background-color: #716e6e;
-}
-#text {
-  margin: 20px 16px;
-  text-align: center;
-  color: black;
-  padding: 25px;
-}
-
-.index-button {
-  margin: 20px 8px;
-  text-align: center;
-  background-color: #fcf1e4;
-  box-shadow: 0px 0px 20px 0px #000000;
-  border-radius: 5px;
-  padding: 8px;
-  font-size: 20px;
-  font-weight: bold;
-}
-/*----Button hidden text-----*/
-#div1 {
-  background: #fffdfd;
-  margin: 20px 8px;
-}
-#div2 {
-  background: rgb(255, 253, 253);
-  margin: 20px 8px;
-}
-#div3 {
-  background: rgb(255, 253, 253);
-  margin: 20px 8px;
-}
-/*--------*/
-
-.index-banner {
-  width: 100vw;
-}
-.index-banner-img {
-  width: 100%;
-  height: auto;
-}
-
-#title {
-  text-align: center;
-  background-color: rgb(252, 241, 228);
-  font-family: cursive;
-}
-
-.img_deg {
-  float: left;
-  width: 100%;
-  max-width: 500px;
-  box-shadow: 0px 0px 20px 0px #000000;
-  border-radius: 8px;
-  margin: 10px;
-}
-.img_deg_right {
-  float: right;
-  width: 100%;
-  max-width: 500px;
-  box-shadow: 0px 0px 20px 0px #000000;
-  border-radius: 8px;
-  margin: 10px;
-}
-.img_deg_left {
-  float: left;
-  width: 100%;
-  max-width: 500px;
-  box-shadow: 0px 0px 20px 0px #000000;
-  border-radius: 8px;
-  margin: 10px;
-}
-.pos_AboutUs {
-  position: relative;
-  margin: 0;
-  max-width: 100%;
-  height: auto;
-  background-color: rgb(246, 251, 249);
-  padding: 30px;
-}
-
-.pos_ContactUs {
-  position: relative;
-  max-width: 100%;
-  height: auto;
-  background-color: rgb(233, 242, 239);
-  padding: 30px;
-}
-
-.pos_BookTestDrive {
-  position: relative;
-  max-width: 100%;
-  height: auto;
-  background-color: rgb(246, 251, 249);
-  padding: 30px;
 }
 
 /*------------------------------------------ABOUT---------------------------------------------*/
