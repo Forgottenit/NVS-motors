@@ -47,7 +47,7 @@ a[aria-current="page"] {
   text-align: center;
   background-color: #716e6e;
 }
-#text {
+.text {
   flex: 50%;
   margin: 20px 16px;
   padding: 25px;
