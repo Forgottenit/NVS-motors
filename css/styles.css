@@ -179,7 +179,7 @@ a[aria-current="page"] {
 
 .contact-us-wrapper {
   font-family: "Open Sans", sans-serif;
-  background: url("../garage-943249_1280.jpg") no-repeat center center fixed;
+  background: url("../images/garage-old.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
 }
@@ -344,7 +344,7 @@ a[aria-current="page"] {
 /*------------------------------------------TEST DRIVE----------------------------------------------*/
 .test-drive-wrapper {
   font-family: "Open Sans", sans-serif;
-  background: url("../car-6658749_1280.jpg") no-repeat center center fixed;
+  background: url("../images/car-tDpage.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100%;
 }
