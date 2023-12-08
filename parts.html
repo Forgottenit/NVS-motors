@@ -83,6 +83,68 @@
     </div>
     <!-- wrapper end -->
 
+<<<<<<< HEAD
+=======
+
+
+
+<h2 id="information">Make your choice</h2>
+
+<h3 id="rock"onclick="clickedRock()">-ROCK</h3>
+<h3 id="paper" onclick="clickedPaper()">-PAPER</h3>
+<h3 id="sissors"onclick="clickedSissors()">-SISSORS</h3>
+<button id="shut" onclick="MomentofTruth()"> SHUT</button>
+
+<script>
+alert("Here is JavaScript ...are you ready to play;)");
+var playerName= window.prompt("insert the name");
+document.getElementById("Title").innerHTML ="Hello" + playerName;
+
+var userchoice;
+
+function clickeddRock(){
+  userchoice ="Rock";
+  alert(playerName + "you choosed" + userchoice);
+  }
+
+  function clickedPaper(){
+  userchoice ="Paper";
+  alert(playerName + "you choosed" + userchoice);
+  }
+
+  function clickedSissors(){
+  userchoice ="Sissors";
+  alert(playerName + "you choosed" + userchoice);
+  }
+
+  function MomentofTruth(){
+document.getElementById("Rock").style.display ='none';
+document.getElementById("Paper").style.display ='none';
+document.getElementById("Scissors").style.display ='none';
+document.getElementById("Shut").style.display ='none';
+
+var computerchoice;
+if(userchoice=="Paper"){
+  computerchoice ="Rock";
+}
+if(userchoice=="Rock"){ 
+  computerchoice ="Paper";
+}
+
+document.getElementById("title").innerHTML = playerName + "YOU LOST :))";
+document.getElementById("information").innerHTML ="Computer choosed" 
++ computerchoice + "You choosed "+ userchoice;
+}
+
+
+
+</script>
+
+
+
+
+
+>>>>>>> NVProjectNEW7/main
     <!-- FOOTER -->
 
     <footer class="bg-dark text-white mt-4 py-3">

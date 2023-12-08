@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <title>Home Page</title>
+=======
+    <meta name="description" content="About the Motor company " />
+    <title>About Page</title>
+>>>>>>> NVProjectNEW7/main
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <!-- BOOTSTRAP -->
     <link
@@ -22,7 +27,11 @@
     />
   </head>
   <body>
+<<<<<<< HEAD
     <div class="wrapper">
+=======
+    <div>
+>>>>>>> NVProjectNEW7/main
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -79,11 +88,81 @@
           </div>
         </div>
       </nav>
+<<<<<<< HEAD
       <!-- NAVBAR END -->
     </div>
     <!-- wrapper end -->
 
     <!-- FOOTER -->
+=======
+      <br />
+      <!-- NAVBAR END -->
+    </div>
+
+    <!---------------------------------------------------------->
+    <!-- Natalia Vovc   images Royalty free from:wwww.pixabay.com -->
+
+    <!----------------------------------GAME-------------------------------------------->
+    <div id="container">
+      <p>Guess the Number to win a Free test Drive!</p>
+      <p id="outputText">Number between 1 and 100</p>
+      <input id="userInput" />
+      <button class="game-button" id="enterButton">Enter</button>
+      <button class="game-button" id="againButton">Play again</button>
+    </div>
+    <br />
+
+    <div class="newspaper">
+      <h1>NVS Motors Since 1952</h1>
+      NVS Motors is bringing the latest and most sustainable technologies into
+      our products and services so that they are available to everyone. The
+      open-minded philosophy is primarily focused on supporting exclusivity,
+      innovation and sustainability.
+      <br />
+      NVS Motors: Vision to support exclusivity<br />
+      Our community is made up of experts, who contribute to the company's
+      success with unique perspectives and experiences. Employees are
+      experienced and professionals in the field. Having professional teams
+      means having the ability to be more agile and be able to better meet
+      customer needs. This is possible thanks to our company strategy based on
+      three principles: respect for human values; respect for local traditions,
+      culture and context and identification of customers needs, always is
+      number one. NVS Motors - cannot do without Technical Innovation, which is
+      the beating heart of the Motors industry, which is increasingly relevant
+      due to the new challenges that await us in the future.
+    </div>
+    <br />
+
+    <div class="index-banner">
+      <img
+        class="index-banner-img"
+        src="Images/car-4586299_1280-750_x_250.jpg"
+        alt="blackCar"
+      />
+    </div>
+    <br />
+
+    <div class="newspaper">
+      <p id="paragraph">
+        At NVS Motors you will find a personalized consulting service to
+        accompany you in all phases of choosing, managing - products and
+        services. Since 1952, with many years of experience in the automotive
+        market, we have been committed to guaranteeing the quality and prestige
+        that the three-pointed star requires by welcoming on board our cars
+        drivers with different lifestyles, desires and needs. We guarantee your
+        vehicle an unrivalled maintenance and repair service, supported by the
+        most modern diagnostic systems and the most advanced technologies, by
+        certified technicians and mechanics and by the high quality Parts.
+        Exclusive offers on Board - designed specifically for you and your Car.
+        Get notified when it's time to have your car checked Service Requests &
+        Online Bookings A tool to find your nearest branch.
+      </p>
+    </div>
+    <br />
+
+    <!-- FOOTER -->
+    <br />
+>>>>>>> NVProjectNEW7/main
 
     <footer class="bg-dark text-white mt-4 py-3">
       <div class="container">
@@ -169,5 +248,42 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+<<<<<<< HEAD
+=======
+    <!---Game-->
+    <script>
+      var enterButton = document.getElementById("enterButton");
+      var againButton = document.getElementById("againButton");
+      var output = document.getElementById("outputText");
+
+      var randomNumber = Math.ceil(Math.random() * 100);
+
+      function checkNumber() {
+        var input = document.getElementById("userInput").value;
+        if (input == randomNumber) {
+          output.innerHTML =
+            "Well Done! The number was " +
+            randomNumber +
+            "! You won a free Test Drive!";
+          output.style.color = "green";
+        } else if (input > randomNumber && input <= 100) {
+          output.innerHTML = "Too HIGH";
+        } else if (input < randomNumber && input > 1) {
+          output.innerHTML = "Too LOW";
+        } else if (input < 1) {
+          output.innerHTML = "Higher, the number should be between 1 and 100";
+        } else if (isNaN(input)) {
+          output.innerHTML = "That's not a Number!";
+        } else {
+          output.innerHTML = "The number should be between 1 and 100";
+        }
+      }
+
+      enterButton.addEventListener("click", checkNumber);
+      againButton.addEventListener("click", function () {
+        location.reload();
+      });
+    </script>
+>>>>>>> NVProjectNEW7/main
   </body>
 </html>
