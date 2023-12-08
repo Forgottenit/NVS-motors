@@ -52,9 +52,6 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="parts.html">Parts</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="contactUs.html">Contact Us</a>
             </li>
             <li class="nav-item dropdown">
@@ -115,8 +112,8 @@
 
     <div class="pos_AboutUs">
       <button class="index-button" onclick="aboutUs()">ABOUT US</button>
+
       <div id="div1">
-        <br />
         <a href="about.html">
           <!-----RoyaltyfreeIMG https://pixabay.com/photos/bmw-car-dashboard-steering-wheel-3074335/-->
           <img
@@ -142,6 +139,7 @@
         </p>
       </div>
     </div>
+
     <div class="pos_ContactUs">
       <button class="index-button" onclick="contactUs()">CONTACT US</button>
       <div id="div2">
@@ -280,7 +278,7 @@
       var div1;
       var div2;
       var div3;
-
+      // Hide div content on load
       window.onload = function () {
         div1 = document.getElementById("div1");
         div2 = document.getElementById("div2");
@@ -289,9 +287,11 @@
         div2.style.display = "none";
         div3.style.display = "none";
       };
+
+      // Images set to display flex, as if set to block, the child elements are unable to "flex"
       function aboutUs() {
         if (div1.style.display === "none") {
-          div1.style.display = "block";
+          div1.style.display = "flex";
         } else {
           div1.style.display = "none";
         }
@@ -299,7 +299,7 @@
 
       function contactUs() {
         if (div2.style.display === "none") {
-          div2.style.display = "block";
+          div2.style.display = "flex";
         } else {
           div2.style.display = "none";
         }
@@ -307,7 +307,7 @@
 
       function bookTestDrive() {
         if (div3.style.display === "none") {
-          div3.style.display = "block";
+          div3.style.display = "flex";
         } else {
           div3.style.display = "none";
         }

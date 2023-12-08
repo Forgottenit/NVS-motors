@@ -34,10 +34,13 @@ a[aria-current="page"] {
   background-color: #716e6e;
 }
 #text {
+  flex: 50%;
+
   margin: 20px 16px;
+  padding: 25px;
   text-align: center;
   color: black;
-  padding: 25px;
+  word-break: break-word;
 }
 
 .index-button {
@@ -50,18 +53,34 @@ a[aria-current="page"] {
   font-size: 20px;
   font-weight: bold;
 }
-/*----Button hidden text-----*/
+
 #div1 {
   background: #fffdfd;
   margin: 20px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
 }
 #div2 {
-  background: rgb(255, 253, 253);
+  background: #fffdfd;
   margin: 20px 8px;
+  display: flex;
+  flex-direction: row-reverse; /* Image to the right */
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
 }
 #div3 {
-  background: rgb(255, 253, 253);
+  background: #fffdfd;
   margin: 20px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
 }
 /*--------*/
 
@@ -80,36 +99,38 @@ a[aria-current="page"] {
 }
 
 .img_deg {
-  float: left;
-  width: 100%;
+  flex: 50%;
   max-width: 500px;
+  height: auto;
   box-shadow: 0px 0px 20px 0px #000000;
   border-radius: 8px;
+  object-fit: contain;
   margin: 10px;
-  height: auto;
 }
+
 .img_deg_right {
-  float: right;
-  width: 100%;
+  flex: 50%;
+
   max-width: 500px;
+  height: auto;
   box-shadow: 0px 0px 20px 0px #000000;
   border-radius: 8px;
+  object-fit: contain;
   margin: 10px;
-  height: auto;
 }
 .img_deg_left {
-  float: left;
-  width: 100%;
+  flex: 50%;
   max-width: 500px;
+  height: auto;
   box-shadow: 0px 0px 20px 0px #000000;
   border-radius: 8px;
+  object-fit: contain;
   margin: 10px;
-  height: auto;
 }
 .pos_AboutUs {
   position: relative;
   margin: 0;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   background-color: rgb(246, 251, 249);
   padding: 30px;
@@ -129,6 +150,17 @@ a[aria-current="page"] {
   height: auto;
   background-color: rgb(246, 251, 249);
   padding: 30px;
+}
+/* ------------------------------INDEX MEDIA QUERIES--------------------------------------------  */
+/* Images to stack on smaller screens */
+@media (max-width: 768px) {
+  #div1 {
+    flex-direction: column;
+  }
+
+  .img_deg {
+    max-width: 100%;
+  }
 }
 /*--------------------------------------CONTACT US-----------------------------------------------*/
 
@@ -221,6 +253,8 @@ a[aria-current="page"] {
 /*--------------------------------------PRICES-----------------------------------------------*/
 
 .prices-banner-div {
+  display: flex;
+  object-fit: contain;
   width: 100vw;
   height: 37svh; /* Skipped if not supported */
   height: 37vh;
@@ -346,7 +380,7 @@ footer a[aria-current="page"] {
   margin: 50px;
   background-color: rgb(255, 253, 253);
 }
-h1 {
+.about-h1 {
   background-color: rgb(175, 173, 171);
 }
 .game-button {
