@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 100vh; /* For Browser Support */
+  height: 100svh; /* Skipped if not supported */
+}
+/*------------------------------------------NAVBAR----------------------------------------------*/
+
+a[aria-current="page"] {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.dropdown-item[aria-current="page"] {
+  font-size: 1.1rem;
+  text-decoration: none !important; /*Important - to overwrite underline in dropdown */
+  font-weight: 700;
+}
+/*------------------------------------------FOOTER----------------------------------------------*/
+
+footer h4 {
+  font-weight: 700;
+}
+
+footer a {
+  text-decoration: none !important; /*Important - to overwrite underline */
+}
+
+footer a[aria-current="page"] {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#social-media a {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.copyright {
+  text-align: right;
+}
+/*------------------------------------------INDEX---------------------------------------------*/
+#info {
+  margin: 20px 8px;
+  text-align: center;
+  background-color: #716e6e;
+}
+#text {
+  margin: 20px 16px;
+  text-align: center;
+  color: black;
+  padding: 25px;
+}
+
+.index-button {
+  margin: 20px 8px;
+  text-align: center;
+  background-color: #fcf1e4;
+  box-shadow: 0px 0px 20px 0px #000000;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*----Button hidden text-----*/
+#div1 {
+  background: #fffdfd;
+  margin: 20px 8px;
+}
+#div2 {
+  background: rgb(255, 253, 253);
+  margin: 20px 8px;
+}
+#div3 {
+  background: rgb(255, 253, 253);
+  margin: 20px 8px;
+}
+/*--------*/
+
+.index-banner {
+  width: 100vw;
+}
+.index-banner-img {
+  width: 100%;
+  height: auto;
+}
+
+#title {
+  text-align: center;
+  background-color: rgb(252, 241, 228);
+  font-family: cursive;
+}
+
+.img_deg {
+  float: left;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 0px 20px 0px #000000;
+  border-radius: 8px;
+  margin: 10px;
+}
+.img_deg_right {
+  float: right;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 0px 20px 0px #000000;
+  border-radius: 8px;
+  margin: 10px;
+}
+.img_deg_left {
+  float: left;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 0px 20px 0px #000000;
+  border-radius: 8px;
+  margin: 10px;
+}
+.pos_AboutUs {
+  position: relative;
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+  background-color: rgb(246, 251, 249);
+  padding: 30px;
+}
+
+.pos_ContactUs {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  background-color: rgb(233, 242, 239);
+  padding: 30px;
+}
+
+.pos_BookTestDrive {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  background-color: rgb(246, 251, 249);
+  padding: 30px;
+}
+
+/*------------------------------------------ABOUT---------------------------------------------*/
+.newspaper {
+  column-count: 4;
+  padding: 16px;
+  margin: 50px;
+  background-color: rgb(255, 253, 253);
+}
+h1 {
+  background-color: rgb(175, 173, 171);
+}
+.game-button {
+  margin: 20px 8px;
+  text-align: center;
+  background-color: rgb(252, 241, 228);
+  box-shadow: 0px 0px 20px 0px #000000;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*-------game--------*/
+#container {
+  margin: auto;
+  border: 1px solid rgb(104, 104, 104);
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  width: 90vw;
+  background-color: rgb(209, 200, 200);
+  box-shadow: 0px 0px 20px 0px #000000;
+  border-radius: 8px;
+}
+
+#userInput {
+  width: 170px;
+}
+#outputText {
+  color: rgb(211, 10, 10);
+}
+/*----------------*/

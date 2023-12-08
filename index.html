@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Home page for an Irish Motor company that sells car"
+    />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- FONT-AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><h3>NVS Motors</h3></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="parts.html">Parts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactUs.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="testDrive.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Test Drive
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="prices.html">Prices</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="testDrive.html"
+                    >Book Test Drive</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <div class="index-banner">
+      <!-----RoyaltyfreeIMG https://pixabay.com/photos/bmw-suv-auto-fog-autumn-1216469/-->
+      <img
+        class="index-banner-img"
+        src="Images/1-1500_x_250.jpg"
+        alt="grey car"
+      />
+    </div>
+    <br />
+
+    <div id="title">
+      <h3>The cars we are drive say a lot about us!</h3>
+    </div>
+
+    <br />
+    <div id="Info">
+      <p id="text">
+        NVS Motors since 1952 - Quality cars, with maximum reliability also in
+        service, great at all times. Thanks to the passion, and strategic
+        vision, NVS Motors dealerships become a point of reference. There's no
+        such thing as a bad day when you're driving your dream car. NVS Motors
+        is bringing the latest and most sustainable technologies into the
+        products and services so that they are available to everyone. The
+        open-minded philosophy is primarily focused on supporting exclusivity,
+        innovation and sustainability. A car is not just a machine, it's a work
+        of art that you can drive.
+      </p>
+    </div>
+
+    <div class="pos_AboutUs">
+      <button class="index-button" onclick="aboutUs()">ABOUT US</button>
+      <div id="div1">
+        <br />
+        <a href="about.html">
+          <!-----RoyaltyfreeIMG https://pixabay.com/photos/bmw-car-dashboard-steering-wheel-3074335/-->
+          <img
+            class="img_deg"
+            src="Images/3074335_1280.jpg"
+            height="300"
+            alt="steering wheel"
+          />
+        </a>
+        <p id="text" style="color: black">
+          The beauty of a car lies not in its appearance, but in the way it
+          makes you feel. NVS Motors: Vision to support exclusivity<br />
+          Our community is made up of experts and professionals, who contribute
+          to the company's success with unique perspectives and experiences.
+          Employees are experienced and professionals in the field. Having
+          professional teams means having the ability to be more agile and be
+          able to better meet customer needs. This is possible thanks to our
+          company strategy based on three principles: respect for human values;
+          respect for local traditions, culture and context and identification
+          of customers needs, always is number one. NVS Motors - cannot do
+          without Technical Innovation, which is the beating heart of the Motors
+          industry, which is increasingly relevant due to the new challenges
+          that await us in the future.
+        </p>
+      </div>
+    </div>
+    <div class="pos_ContactUs">
+      <button class="index-button" onclick="contactUs()">CONTACT US</button>
+      <div id="div2">
+        <br />
+        <a href="contactUs.html">
+          <img
+            class="img_deg_right"
+            src="Images/contact-us-2993000_1280.jpg"
+            height="200"
+            alt="contactUs"
+          />
+        </a>
+
+        <p id="text" style="color: black">
+          Do you need support in choosing your new CAR? Rely on one of our
+          experts, we will help you customize your model and find the solution
+          that best suits your needs. Opened Mon. – Fri. 09:00 – 19:00, Sat.
+          10:00 – 18:00
+          <br />CONTACT US BY PHONE +35576543210 OR BOOK an appointment ONLINE!
+        </p>
+      </div>
+    </div>
+
+    <div class="pos_BookTestDrive">
+      <button class="index-button" onclick="bookTestDrive()">TEST DRIVE</button>
+      <div id="div3">
+        <br />
+        <a href="testDrive.html">
+          <!---RoyaltyfreeIMG-->
+          <img
+            class="img_deg_left"
+            src="Images/10.jpg"
+            height="200"
+            alt="road"
+          />
+        </a>
+        <p id="text" style="color: black; margin: 0; padding: 0">
+          We can provide fast quotations for the perfect car. Technological
+          innovation will ensure to make the correct choice.We will always
+          ensure that your options are clearly identified. For that you just
+          need to book a Test Drive with us! To apply for it, please click on
+          the image and fill the form
+        </p>
+      </div>
+    </div>
+    <!--RoyaltyfreeIMG https://pixabay.com/photos/car-sport-vehicle-luxury-red-3921599//-->
+    <div class="index-banner">
+      <img
+        class="index-banner-img"
+        src="Images/4612551_1280-1500_x_350.jpg"
+        alt="black car sign"
+      />
+    </div>
+    <br />
+
+    <!-- FOOTER -->
+
+    <footer class="bg-dark text-white mt-4 py-3">
+      <div class="container">
+        <div class="row">
+          <!-- Company Info -->
+          <div class="col-md-4 mb-3">
+            <h4>NVS Motors</h4>
+            <p>Driving Customer Satisfaction</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-3">
+            <h4>Links</h4>
+            <ul class="list-unstyled">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+              <li><a href="about.html" class="text-white">About</a></li>
+              <li><a href="parts.html" class="text-white">Parts</a></li>
+              <li>
+                <a href="contactUs.html" class="text-white">Contact Us</a>
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="prices.html"
+                  >Test Drive Prices</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="testDrive.html"
+                  >Book Test Drive</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media Links -->
+          <div id="social-media" class="col-md-4 mb-3">
+            <h4>Follow Us</h4>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="text-white me-2"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.twitter.com/"
+              target="_blank"
+              class="text-white me-2"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="text-white me-2"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="text-white"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+          <p class="copyright">
+            <i class="fa-regular fa-copyright"></i> 2024 NVS Motors
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-------------------------------------SCRIPTS--------------------------------------------->
+
+    <!-- BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!------------------------------------------Hidden text function------------------------->
+    <script>
+      var div1;
+      var div2;
+      var div3;
+
+      window.onload = function () {
+        div1 = document.getElementById("div1");
+        div2 = document.getElementById("div2");
+        div3 = document.getElementById("div3");
+        div1.style.display = "none";
+        div2.style.display = "none";
+        div3.style.display = "none";
+      };
+      function aboutUs() {
+        if (div1.style.display === "none") {
+          div1.style.display = "block";
+        } else {
+          div1.style.display = "none";
+        }
+      }
+
+      function contactUs() {
+        if (div2.style.display === "none") {
+          div2.style.display = "block";
+        } else {
+          div2.style.display = "none";
+        }
+      }
+
+      function bookTestDrive() {
+        if (div3.style.display === "none") {
+          div3.style.display = "block";
+        } else {
+          div3.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
