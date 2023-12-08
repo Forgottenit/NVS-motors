@@ -180,6 +180,7 @@ a[aria-current="page"] {
 .contact-us-wrapper {
   font-family: "Open Sans", sans-serif;
   background: url("../images/garage-old.jpg") no-repeat center center fixed;
+  /* https://pixabay.com/photos/garage-shop-car-fix-hdr-light-943249/ */
   background-size: cover;
   height: 100%;
 }
@@ -345,6 +346,7 @@ a[aria-current="page"] {
 .test-drive-wrapper {
   font-family: "Open Sans", sans-serif;
   background: url("../images/car-tDpage.jpg") no-repeat center center fixed;
+  /* https://pixabay.com/photos/car-bmw-vehicle-automobile-6658749/ */
   background-size: cover;
   height: 100%;
 }
