@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-height: 100vh; /* For Browser Support */
+  min-height: 100svh; /* Skipped if not supported */
+}
+
+/* ----------------------------------------NAVBAR----------------------------------------------- */
+
+a[aria-current="page"] {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.dropdown-item[aria-current="page"] {
+  font-size: 1.1rem;
+  text-decoration: none !important; /*Important! - to overwrite bootstrap underline in dropdown */
+  font-weight: 700;
+}
+
+/*------------------------------------------INDEX----------------------------------------------*/
+
+/*--------------------------------------CONTACT US-----------------------------------------------*/
+
+.contact-us-wrapper {
+  font-family: "Open Sans", sans-serif;
+  background: url("../garage-943249_1280.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.contact-form {
+  background: linear-gradient(0.25turn, #e1f6ff, #92b6fa, rgb(206, 206, 255));
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 5px #000000;
+  margin-top: 50px;
+}
+.form-control {
+  border-radius: 10px;
+  border: 5px solid #e8dfdf !important; /* Important! - to overwrite bootstrap border */
+}
+.contact-form button {
+  border-radius: 20px;
+  background-color: #00bcd4;
+  box-shadow: 0px 0px 20px 0px #000000;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+.contact-form button:hover {
+  background-color: #02a2b1;
+  box-shadow: 0px 0px 5px 0px #000000;
+}
+.contact-form button:focus {
+  background-color: #02a2b1;
+}
+
+.btn-close:hover {
+  background-color: #02a2b1;
+}
+
+.modal-content {
+  background: linear-gradient(0.25turn, #e1f6ff, #92b6fa, rgb(206, 206, 255));
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 5px #000000;
+  color: #333;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.modal-header {
+  border-bottom: 1px solid #dfe3e8;
+}
+.modal-footer {
+  border-top: 1px solid #dfe3e8;
+}
+.btn-close {
+  color: #000;
+}
+.modal-body p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.modal-footer .btn {
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px #000000;
+  transition: background-color 0.3s;
+}
+.modal-footer .btn:hover {
+  box-shadow: 0px 0px 5px 0px #000000;
+}
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+.modal-footer .btn-primary {
+  background-color: #00bcd4;
+  color: #ffffff;
+}
+.modal-footer .btn-primary:hover {
+  background-color: #02a2b1;
+}
+.modal-footer .btn-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*--------------------------------------PRICES-----------------------------------------------*/
+
+.prices-banner-div {
+  width: 100vw;
+  height: 37svh; /* Skipped if not supported */
+  height: 37vh;
+}
+
+.prices-banner-img {
+  width: 100%;
+  height: 100%;
+}
+.car-item-1,
+.car-item-2,
+.car-item-3,
+.car-item-4 {
+  margin: 30px !important; /* Important - to overwrite bootstrap margin */
+  box-shadow: 0px 0px 20px 0px #000000;
+  padding: 15px;
+  border-radius: 10px;
+}
+.car-item-1 {
+  background: linear-gradient(0.15turn, #e6f7fd, #d0e0ff, #ddf9ff);
+}
+.car-item-2 {
+  background: linear-gradient(0.75turn, #addcee, #bdcff1, #ddf9ff);
+}
+.car-item-3 {
+  background: linear-gradient(0.35turn, #d0f2ff, #d6e4ff, #b2effd);
+}
+.car-item-4 {
+  background: linear-gradient(0.15turn, #def6ff, #dde8ff, #b1f1ff);
+}
+.car-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px #000000;
+}
+.car-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.car-price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*------------------------------------------TEST DRIVE----------------------------------------------*/
+.test-drive-wrapper {
+  font-family: "Open Sans", sans-serif;
+  background: url("../car-6658749_1280.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+#testDriveFormDiv {
+  background: linear-gradient(135deg, rgb(240, 233, 240), #f9c0ff, #fcb0e5);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 5px #4d4d4d;
+  margin-top: 50px;
+}
+
+#test-drive-form .form-control {
+  border-radius: 10px;
+  border: 5px solid #f0e6f6 !important;
+}
+
+#test-drive-form button {
+  border-radius: 20px;
+  background-color: #ff6b6b;
+  box-shadow: 0 0 20px 0 #000;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+#test-drive-form button:hover {
+  background-color: #ff4757;
+  box-shadow: 0 0 5px 0 #000;
+}
+
+#test-drive-form input[type="date"],
+#test-drive-form input[type="time"] {
+  background-color: #eaf6f4;
+  color: #333333;
+}
+/*------------------------------------------FOOTER----------------------------------------------*/
+
+footer h4 {
+  font-weight: 700;
+}
+
+footer a {
+  text-decoration: none !important; /*Important - to overwrite underline */
+}
+
+footer a[aria-current="page"] {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#social-media a {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.copyright {
+  text-align: center;
+}
