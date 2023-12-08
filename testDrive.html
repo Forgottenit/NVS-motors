@@ -98,6 +98,7 @@
                     placeholder="Your Name *"
                     required
                   />
+                  <div class="form-text">* Please enter your full name.</div>
                 </div>
                 <!-- Email input -->
                 <div class="form-group mt-3">
@@ -109,6 +110,9 @@
                     placeholder="Your Email *"
                     required
                   />
+                  <div class="form-text">
+                    * Please select a valid email address.
+                  </div>
                 </div>
                 <!-- Phone input -->
                 <div class="form-group mt-3">
@@ -124,6 +128,9 @@
                     maxlength="15"
                     title="Phone number should be 7-15 digits."
                   />
+                  <div class="form-text">
+                    * Please select a valid phone number.
+                  </div>
                 </div>
                 <!-- Date input for test drive -->
                 <div class="form-group mt-3">
@@ -134,7 +141,11 @@
                     name="test_drive_date"
                     required
                   />
+                  <div class="form-text">
+                    * Please select a future date for the test drive.
+                  </div>
                 </div>
+
                 <!-- Time input for test drive -->
                 <div class="form-group mt-3">
                   <input
@@ -142,8 +153,13 @@
                     class="form-control"
                     id="tdTime"
                     name="test_drive_time"
+                    min="09:00"
+                    max="17:00"
                     required
                   />
+                  <div class="form-text">
+                    * Please select a time between 9am and 5pm.
+                  </div>
                 </div>
                 <!-- Car Model Dropdown -->
                 <div class="form-group mt-3">
@@ -154,9 +170,10 @@
                     required
                   >
                     <option value="" selected disabled>Select Car Model</option>
-                    <option value="Model 1">Model 1</option>
-                    <option value="Model 2">Model 2</option>
-                    <option value="Model 3">Model 3</option>
+                    <option value="Model 1">The Electra</option>
+                    <option value="Model 2">The Executive</option>
+                    <option value="Model 3">The Stinger</option>
+                    <option value="Model 3">The Titan</option>
                     <!-- Add more car models as needed -->
                   </select>
                 </div>
@@ -280,5 +297,34 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      document
+        .getElementById("test-drive-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var currentDate = new Date();
+          var currentYear = currentDate.getFullYear();
+
+          // Validate Name (more than two letters)
+          var name = document.getElementById("tdName").value;
+          if (name.length <= 2) {
+            alert("Name must be more than two letters.");
+            return;
+          }
+
+          // Validate Date (not today or in the past)
+          var selectedDate = new Date(document.getElementById("tdDate").value);
+          if (selectedDate < currentDate) {
+            alert("Please select a future date for the test drive.");
+            return;
+          } else if (selectedDate.getFullYear() > currentYear + 1) {
+            alert("Please select a date within the next year.");
+            return;
+          }
+          this.submit();
+        });
+    </script>
   </body>
 </html>

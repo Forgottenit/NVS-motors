@@ -96,10 +96,15 @@
               data-car="Car Model 1"
             />
           </div>
-          <div class="col-md-8 car-description">
-            <h3>Car Model 1</h3>
-            <p>Description of Car Model 1.</p>
-            <span class="car-price">€40,000</span>
+          <div class="col-md-8 car-description order-md-1">
+            <h3>The Electra</h3>
+            <p>
+              The Electra is a revolutionary electric car combining cutting-edge
+              technology with a sleek, eco-friendly design. Experience the
+              future of driving with unparalleled efficiency and silent
+              performance.
+            </p>
+            <span class="car-price">€80,000</span>
           </div>
         </div>
         <!-- Car 2 -->
@@ -113,9 +118,14 @@
             />
           </div>
           <div class="col-md-8 car-description order-md-1">
-            <h3>Car Model 2</h3>
-            <p>Description of Car Model 2.</p>
-            <span class="car-price">€58,000</span>
+            <h3>The Executive</h3>
+            <p>
+              For the modern powerful business professional, the Executive
+              offers a blend of turbo power and luxurious finishes. Its
+              commanding presence and refined style set new standards in the
+              corporate world.
+            </p>
+            <span class="car-price">€100,000</span>
           </div>
         </div>
         <!-- Car 3 -->
@@ -129,9 +139,13 @@
             />
           </div>
           <div class="col-md-8 car-description">
-            <h3>Car Model 3</h3>
-            <p>Description of Car Model 3.</p>
-            <span class="car-price">€75,000</span>
+            <h3>The Stinger</h3>
+            <p>
+              The Stinger is for those who crave speed and style. With its
+              aerodynamic design and turbocharged engine, it delivers an
+              exhilarating ride both on and off road.
+            </p>
+            <span class="car-price">€90,000</span>
           </div>
         </div>
         <!-- Car 4 -->
@@ -145,16 +159,21 @@
             />
           </div>
           <div class="col-md-8 car-description order-md-1">
-            <h3>Car Model 4</h3>
-            <p>Description of Car Model 4.</p>
-            <span class="car-price">€58,000</span>
+            <h3>The Titan</h3>
+            <p>
+              Conquer any terrain with the brand new Titan, a top-of-the-range
+              4x4 jeep designed for both adventure and luxury. Its robust build
+              and advanced features ensure a safe family drive or a thrilling
+              off-road experience.
+            </p>
+            <span class="car-price">€85,000</span>
           </div>
         </div>
       </div>
       <!-- wrapper end -->
     </div>
 
-    <div id="myModal" class="modal">
+    <div id="myModal" class="modal carModal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -174,12 +193,11 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-primary"
               data-bs-dismiss="modal"
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -282,20 +300,20 @@
         // Car data for title and paragraph of modal
         var carData = {
           "Car Model 1": {
-            head: "Car Model 1",
-            body: "Description and details of Car Model 1.",
+            head: "The Electra",
+            body: "<ul><li>Range: Up to 500 km per charge</li><li>Charging Time: Fast charging in 30 minutes</li><li>Motor: Dual Electric Motors with AWD</li><li>Interior: Luxurious all-vegan interior</li><li>Tech: Advanced autopilot system</li><li>Eco-Friendly: Zero carbon emissions</li></ul>",
           },
           "Car Model 2": {
-            head: "Car Model 2",
-            body: "Description and details of Car Model 2.",
+            head: "The Executive",
+            body: "<ul><li>Engine: 4.0L V8 Turbocharged, 560 hp</li><li>Acceleration: 0-100 km/h in 3.8 seconds</li><li>Transmission: 8-speed automatic</li><li>Interior: Hand-stitched leather seats</li><li>Safety: Advanced driver-assistance systems</li><li>Connectivity: Wi-Fi hotspot and wireless charging</li></ul>",
           },
           "Car Model 3": {
-            head: "Car Model 3",
-            body: "Description and details of Car Model 3.",
+            head: "The Stinger",
+            body: "<ul><li>Engine: 3.5L V6 Twin-Turbo, 510 hp</li><li>Acceleration: 0-100 km/h in 3.5 seconds</li><li>Top Speed: 320 km/h</li><li>Design: Aerodynamic sports body</li><li>Suspension: Adaptive sports suspension</li><li>Interior: High-fidelity sound system</li></ul>",
           },
           "Car Model 4": {
-            head: "Car Model 4",
-            body: "Description and details of Car Model 4.",
+            head: "The Titan",
+            body: "<ul><li>Engine: 3.8L V6, 285 hp</li><li>Terrain Capability: 4x4 Drive</li><li>Ground Clearance: High for off-road activities</li><li>Towing Capacity: Up to 3500 kg</li><li>Safety: Rugged build with reinforced chassis</li><li>Extras: Integrated navigation system for trails</li></ul>",
           },
         };
 
@@ -305,7 +323,7 @@
           if (carModel in carData) {
             // Update modal title and paragraph content
             $(".modal-title").text(carData[carModel].head);
-            $(".modal-body p").text(carData[carModel].body);
+            $(".modal-body p").html(carData[carModel].body);
 
             // Show modal
             modal.show();
