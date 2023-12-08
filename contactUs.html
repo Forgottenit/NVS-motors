@@ -20,6 +20,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="wrapper contact-us-wrapper">
@@ -274,7 +279,7 @@
             <ul class="list-unstyled">
               <a class="nav-link active" href="index.html">Home</a>
               <li><a href="about.html" class="text-white">About</a></li>
-              <li><a href="parts.html" class="text-white">Parts</a></li>
+
               <li>
                 <a href="contactUs.html" aria-current="page" class="text-white"
                   >Contact Us</a
@@ -363,7 +368,7 @@
         .addEventListener("click", function () {
           window.location.href = "index.html";
         });
-      //Displat modal and hide form for 12 seconds
+      //Display modal and hide form for 12 seconds
       $(document).ready(function () {
         var modal = new bootstrap.Modal(document.getElementById("myModal"));
         var form = document.getElementById("contactFormDiv");
