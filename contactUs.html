@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us| NVS</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- FONT-AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper contact-us-wrapper">
+      <!-- NAVBAR -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><h3>NVS Motors</h3></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="parts.html">Parts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contactUs.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="testDrive.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Test Drive
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="prices.html">Prices</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="testDrive.html"
+                      >Book Test Drive</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NAVBAR END -->
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <!-- FORM -->
+            <div id="contactFormDiv" class="contact-form">
+              <h1>Contact Us</h1>
+
+              <form id="contact-form">
+                <!-- Name input -->
+                <div class="form-group mt-1">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    placeholder="Your Name *"
+                    required
+                  />
+                </div>
+                <!-- Email input -->
+                <div class="form-group mt-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    placeholder="Your Email *"
+                    required
+                  />
+                </div>
+                <!-- Phone input -->
+                <div class="form-group mt-3">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="phone"
+                    placeholder="Your Phone Number *"
+                    pattern="\d+"
+                    required
+                    minlength="7"
+                    maxlength="15"
+                    title="Phone number should be 7-15 digits."
+                  />
+                </div>
+                <!-- Radio input -->
+                <div class="form-group mt-3">
+                  <h4>
+                    <label for="contactPreference"
+                      >Preferred Contact Method:</label
+                    >
+                  </h4>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      id="contactPhone"
+                      name="contact_preference"
+                      value="Phone"
+                      class="form-check-input"
+                    />
+                    <label class="form-check-label" for="contactPhone"
+                      >Phone</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      id="contactEmail"
+                      name="contact_preference"
+                      value="Email"
+                      class="form-check-input"
+                    />
+                    <label class="form-check-label" for="contactEmail"
+                      >Email</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      type="radio"
+                      id="contactEither"
+                      name="contact_preference"
+                      value="Either"
+                      class="form-check-input"
+                      checked
+                    />
+                    <label class="form-check-label" for="contactEither"
+                      >Both</label
+                    >
+                  </div>
+                </div>
+                <!-- Message textarea -->
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="4"
+                    placeholder="Your Message *"
+                    required
+                  ></textarea>
+                </div>
+                <!-- Dropdown field -->
+                <div class="form-group mt-3">
+                  <select class="form-control" name="inquiryType" required>
+                    <option value="" selected disabled>Inquiry Type</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Support">Support</option>
+                    <option value="General">General</option>
+                  </select>
+                </div>
+
+                <!-- Checkbox -->
+                <div class="form-check mb-4 mt-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="agreeCheckbox"
+                    name="agree"
+                  />
+                  <label class="form-check-label" for="agreeCheckbox">
+                    I agree to the terms and conditions
+                  </label>
+                </div>
+                <!-- Submit button -->
+                <button id="submit-btn" type="submit" class="btn btn-primary">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- wrapper end -->
+    </div>
+
+    <!-- MODAL -->
+    <div
+      id="myModal"
+      class="modal fade"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Thank you for your feedback!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Thank you for reaching out and providing your valuable feedback.
+              We truly appreciate it and will get back to you as soon as
+              possible!
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              id="HomeButton"
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              No thanks!
+            </button>
+            <button id="TDButton" type="button" class="btn btn-primary">
+              Would you like a Test Drive?
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-dark text-white mt-4 py-3">
+      <div class="container">
+        <div class="row">
+          <!-- Company Info -->
+          <div class="col-md-4 mb-3">
+            <h4>NVS Motors</h4>
+            <p>Driving Customer Satisfaction</p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-3">
+            <h4>Links</h4>
+            <ul class="list-unstyled">
+              <a class="nav-link active" href="index.html">Home</a>
+              <li><a href="about.html" class="text-white">About</a></li>
+              <li><a href="parts.html" class="text-white">Parts</a></li>
+              <li>
+                <a href="contactUs.html" aria-current="page" class="text-white"
+                  >Contact Us</a
+                >
+              </li>
+
+              <li>
+                <a class="dropdown-item" href="prices.html"
+                  >Test Drive Prices</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="testDrive.html"
+                  >Book Test Drive</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media Links -->
+          <div id="social-media" class="col-md-4 mb-3">
+            <h4>Follow Us</h4>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="text-white me-2"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.twitter.com/"
+              target="_blank"
+              class="text-white me-2"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="text-white me-2"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="text-white"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+          <p class="copyright">
+            <i class="fa-regular fa-copyright"></i> 2024 NVS Motors
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-------------------------------------SCRIPTS--------------------------------------------->
+
+    <!--------------JQUERY------------>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Send user to testDrive.html
+      document
+        .getElementById("TDButton")
+        .addEventListener("click", function () {
+          window.location.href = "testDrive.html";
+        });
+      // Send user to index.html
+      document
+        .getElementById("HomeButton")
+        .addEventListener("click", function () {
+          window.location.href = "index.html";
+        });
+      //Displat modal and hide form for 12 seconds
+      $(document).ready(function () {
+        var modal = new bootstrap.Modal(document.getElementById("myModal"));
+        var form = document.getElementById("contactFormDiv");
+
+        $("#contact-form").submit(function () {
+          event.preventDefault();
+          form.hidden = true;
+          modal.show();
+
+          setTimeout(() => {
+            window.location.reload();
+          }, 12000);
+        });
+      });
+    </script>
+  </body>
+</html>
