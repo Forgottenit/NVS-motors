@@ -53,7 +53,7 @@ a[aria-current="page"] {
   padding: 25px;
   text-align: center;
   color: black;
-  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .index-button {
@@ -416,7 +416,7 @@ footer a[aria-current="page"] {
   padding: 16px;
   margin: 10px;
   background-color: rgb(255, 253, 253);
-  word-break: break-word;
+  overflow-wrap: break-word;
 }
 .about-h1 {
   background-color: rgb(175, 173, 171);
@@ -474,6 +474,6 @@ footer a[aria-current="page"] {
   box-shadow: 0px 0px 12px 0px #000000;
 }
 #paragraph {
-  word-break: break-word;
+  overflow-wrap: break-word;
 }
 /*----------------*/
